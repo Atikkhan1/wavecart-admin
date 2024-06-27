@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
 
   let auto = async () => {
-    const browser = await puppeteer.launch({ executablePath: `components\\puppeteer\\chrome\\win64-126.0.6478.63\\chrome-win64\\chrome.exe`,
+    const browser = await puppeteer.launch({
        headless: false });
     const page = await browser.newPage();
     await page.goto(targetLink);
